@@ -1,0 +1,11 @@
+#! /bin/bash
+
+mkdir $1
+cd $1
+touch $1.s
+
+echo ".section .data" >> $1.s
+echo ".section .text" >> $1.s
+echo ".globl _start" >> $1.s
+echo "_start:" >> $1.s
+
